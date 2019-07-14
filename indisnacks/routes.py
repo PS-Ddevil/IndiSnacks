@@ -6,7 +6,14 @@ from indisnacks import app
 from .forms import SearchForm
 import json
 from ibm_watson import VisualRecognitionV3
-from .keys import apikey, ver
+# Uncomment this in development Version
+# from .keys import apikey, ver
+
+##########
+##Comment this in development Version
+ver = os.environ['ver']
+apikey = os.environ['apikey']
+##########
 
 visual_recognition = VisualRecognitionV3(
     ver,
