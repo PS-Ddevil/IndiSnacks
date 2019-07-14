@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}   
+{% if classes.images[0].classifiers[0].classes %}
+    {% for res in classes.images[0].classifiers[0].classes %}
+        {{res.class}} &nbsp; {{res.score}}
+        <br>
+    {% endfor %}
+{% endif %}
+<br>
+{% endblock content %}

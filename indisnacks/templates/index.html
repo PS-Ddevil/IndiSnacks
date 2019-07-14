@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}    
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"> 
+<div class="container-fluid" style="height: 90%; overflow: hidden; z-index: -4">
+    <div id="img-content">
+    <center>
+        <span id="heading">IndiSnacks</span>
+        <hr class="my-4" style="background-color:white">
+        <a id="search" class="btn btn-primary" href="{{url_for('search')}}">Search</a>
+    </center>
+    </div>
+</div>
+{% endblock content %}
